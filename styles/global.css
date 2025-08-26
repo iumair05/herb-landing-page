@@ -23,6 +23,7 @@ body {
   background: var(--color-bg);
   color: var(--color-text);
   margin: 0px auto;
+  overflow-x: hidden;
 }
 
 /* Main Header */

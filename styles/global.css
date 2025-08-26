@@ -26,6 +26,13 @@ body {
   overflow-x: hidden;
 }
 
+.common-header {
+  position: sticky;
+  z-index: 999;
+  background-color: white;
+  top: 0px;
+}
+
 /* Main Header */
 .main-header {
   display: flex;

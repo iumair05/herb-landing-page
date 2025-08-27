@@ -28,9 +28,8 @@ body {
 }
 
 /* subscribe section */
-
 .subscribe-container {
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .subscribe-box {
@@ -63,6 +62,8 @@ body {
   font-size: 16px;
   letter-spacing: 1.5;
   color: var(--color-text);
+  max-width: 430px;
+  width: 100%;
 }
 
 /* Right form */
@@ -109,6 +110,8 @@ body {
   .subscribe-box {
     flex-direction: column;
     align-items: flex-start;
+    margin: 20px auto 0 auto;
+    padding: 15px 30px;
   }
 
   .subscribe-form {
@@ -124,19 +127,20 @@ body {
   .subscribe-form button {
     width: 100%;
   }
+.subscribe-container {
+  padding: 0 20px;
+}
 }
 
 /* Article Section */
-
 .article-container {
-  padding: 10px;
+  padding: 0 10px;
 }
 .article-section {
   max-width: 1200px;
   width: 100%;
   margin: 47px auto 0px auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 100px;
@@ -199,6 +203,14 @@ body {
   font-size: 14px;
 }
 
+.para {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: bolder;
+  max-width: 250px;
+  width: 100%;
+}
+
 @media screen and (max-width: 1120px) {
   .article-section {
     gap: 30px;
@@ -206,7 +218,11 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
+  .article-container {
+  padding: 0 20px;
+}
   .article-section {
+    margin: 20px auto 0px auto;
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -214,6 +230,29 @@ body {
   .article-left,
   .article-right {
     max-width: 600px;
+    width: 100%;
+  }
+
+  .article-left h3 {
+    line-height: 20px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .article-right img {
+    max-width: 120px;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    border-radius: 8px;
+  }
+
+  .para {
+    line-height: 1;
+    font-size: 16px;
+    font-weight: 700;
+    max-width: 250px;
     width: 100%;
   }
 }
@@ -228,7 +267,7 @@ hr {
 }
 
 .latest-article-container {
-  padding: 10px;
+  padding: 0 10px;
   max-width: 1180px;
   width: 100%;
   margin: 25px auto 0 auto;
@@ -261,9 +300,35 @@ hr {
 }
 
 @media screen and (max-width: 768px) {
+  .latest-article-container {
+    padding: 0 20px;
+    max-width: 1180px;
+    width: 100%;
+    margin: 10px auto 0 auto;
+  }
+
   .latest-article-section {
     flex-direction: column;
     gap: 40px;
+  }
+
+  .latest-article-left img,
+  .latest-article-right img {
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  hr {
+    border: none;
+    max-width: 95vw;
+    width: 100%;
+    border-top: 1px solid var(--color-border);
+    margin: 15px auto 0 auto;
+    padding: 0 10px;
   }
 }
 
@@ -383,6 +448,12 @@ hr {
 
   .first-section p {
     max-width: 100%;
+  }
+  .first-section img {
+    max-width: 80px;
+    max-height: 30px;
+    object-fit: cover;
+    background-position: center;
   }
 }
 

@@ -10,7 +10,6 @@ const swiper1 = new Swiper(".mySwiper1", {
     autoplay: {
         delay: 2000,
         disableOnInteraction: true,
-        loop: true,
     },
     breakpoints: {
         320: {
@@ -31,6 +30,7 @@ const swiper1 = new Swiper(".mySwiper1", {
         }
     }
 });
+
 
 
 const swiper2 = new Swiper(".mySwiper2", {
@@ -134,11 +134,21 @@ closeDrawer.addEventListener("click", () => {
 });
 
 
+// searchQuery input
+
+const searchQuery = document.getElementById('searchQuery');
+const searchQueryBtn = document.getElementById('searchQueryBtn')
+
+searchQueryBtn.addEventListener('click', (e) => {
+    e.preventDefault()
+    alert("Search Query: " + searchQuery.value)
+})
+
 // subscribe section
-const searchQuery = document.getElementById("searchQuery");
+const inputEmail = document.getElementById("inputEmail");
 const searchButton = document.getElementById("searchButton");
 
 searchButton.addEventListener("click", (e) => {
-    e.stopPropagation();
-    alert("User email " + searchQuery.value);
+    e.preventDefault();
+    alert("User email: " + inputEmail.value);
 })

@@ -27,6 +27,13 @@ body {
   overflow-x: hidden;
 }
 
+
+img:hover {
+  scale: 0.97;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
 /* subscribe section */
 .subscribe-container {
   padding: 0 10px;
@@ -378,6 +385,17 @@ hr {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+}
+
+.footer-link ul li {
+font-size: 14px;
+color: black;
+cursor: pointer;
+}
+
+.footer-link ul li:hover {
+text-decoration: underline;
+transition: text-decoration 0.2s ease-in-out;
 }
 
 .first-section p {

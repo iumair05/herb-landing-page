@@ -17,6 +17,7 @@
 
     <!-- Header -->
     <div class="common-header">
+
         <header class="main-header">
 
             <div class="logo">
@@ -44,6 +45,17 @@
                 <p class="advertise">ADVERTISE WITH HERB</p>
             </div>
 
+            <div class="search-bar-mobile">
+                <input type="text" id="searchQuery" placeholder="Search for something" />
+                <button class="search-btn" id="searchQueryBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="black"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="8" cy="8" r="6" />
+                        <line x1="14" y1="14" x2="20" y2="20" />
+                    </svg>
+                </button>
+            </div>
+
             <!-- Hamburger Menu -->
             <button class="menu-toggle" aria-label="Open menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="black"
@@ -55,6 +67,7 @@
             </button>
 
         </header>
+
 
         <nav>
             <ul class="nav-items">
@@ -93,8 +106,13 @@
         <button class="close-drawer">X</button>
 
         <ul class="drawer-nav">
-            <li class="dropdown">BLOGS
-                <ul class="dropdown-menu">
+            <li class="dropdown">
+                <a id="blogs-mobile-toggle">
+                    <span class="dropdown-label">BLOGS</span>
+                    <img class="arrow" src="images/icons/collapse-arrow.svg" alt="toggle arrow" />
+                </a>
+
+                <ul id="blogs-mobile-dropdown">
                     <li>Learn</li>
                     <li>Guides</li>
                     <li>How-Tos</li>
@@ -102,6 +120,7 @@
                     <li>Reviews</li>
                 </ul>
             </li>
+
             <li>DISPENSARIES</li>
             <li>PRODUCTS</li>
             <li>BRANDS</li>

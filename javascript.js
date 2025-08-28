@@ -152,3 +152,13 @@ searchButton.addEventListener("click", (e) => {
     e.preventDefault();
     alert("User email: " + inputEmail.value);
 })
+
+
+// dropdown functionality
+const blogsMobileToggle = document.getElementById("blogs-mobile-toggle");
+const blogsMobileDropdown = document.getElementById("blogs-mobile-dropdown");
+
+blogsMobileToggle.addEventListener("click", () => {
+  blogsMobileDropdown.classList.toggle("open");
+  blogsMobileToggle.classList.toggle("open");
+});

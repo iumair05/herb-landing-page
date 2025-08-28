@@ -34,11 +34,18 @@ img:hover {
   cursor: pointer;
 }
 
-/* subscribe section */
-.subscribe-container {
+
+.body-container {
   padding: 0 10px;
 }
 
+@media (max-width: 992px) {
+  .body-container {
+    padding: 0 20px;
+  }
+}
+
+/* subscribe section */
 .subscribe-box {
   max-width: 1160px;
   width: 100%;
@@ -67,7 +74,9 @@ img:hover {
 
 .subscribe-text p {
   font-size: 16px;
-  letter-spacing: 1.5;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.15px;
   color: var(--color-text);
   max-width: 430px;
   width: 100%;
@@ -134,15 +143,10 @@ img:hover {
   .subscribe-form button {
     width: 100%;
   }
-.subscribe-container {
-  padding: 0 20px;
-}
 }
 
 /* Article Section */
-.article-container {
-  padding: 0 10px;
-}
+
 .article-section {
   max-width: 1200px;
   width: 100%;
@@ -170,6 +174,7 @@ img:hover {
   margin-bottom: 12px;
 }
 .article-left h3 {
+  margin-top: 8px;
   line-height: 32px;
   text-align: left;
   font-size: 30px;
@@ -204,12 +209,6 @@ img:hover {
   gap: 6px;
 }
 
-.date {
-  color: var(--color-date);
-  font-weight: 500;
-  font-size: 14px;
-}
-
 .para {
   line-height: 1.2;
   font-size: 18px;
@@ -225,13 +224,11 @@ img:hover {
 }
 
 @media screen and (max-width: 1024px) {
-  .article-container {
-  padding: 0 20px;
-}
+
   .article-section {
     margin: 20px auto 0px auto;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
   }
   .article-left,
@@ -241,6 +238,7 @@ img:hover {
   }
 
   .article-left h3 {
+    margin-top: 6px;
     line-height: 20px;
     text-align: left;
     font-size: 20px;
@@ -274,7 +272,6 @@ hr {
 }
 
 .latest-article-container {
-  padding: 0 10px;
   max-width: 1180px;
   width: 100%;
   margin: 25px auto 0 auto;
@@ -308,7 +305,6 @@ hr {
 
 @media screen and (max-width: 768px) {
   .latest-article-container {
-    padding: 0 20px;
     max-width: 1180px;
     width: 100%;
     margin: 10px auto 0 auto;
@@ -335,7 +331,6 @@ hr {
     width: 100%;
     border-top: 1px solid var(--color-border);
     margin: 15px auto 0 auto;
-    padding: 0 10px;
   }
 }
 
@@ -355,8 +350,13 @@ hr {
   flex: 0 0 auto;
 }
 
-.latest-article-left div p,
-.latest-article-right div p {
+.article-date {
+  color: var(--color-date);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.latest-article-right div .para, .latest-article-left div .para {
   margin-top: 6px;
   max-width: 300px;
 }

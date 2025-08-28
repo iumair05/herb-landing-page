@@ -16,10 +16,10 @@
 <body>
 
     <!-- Header -->
-    <div class="common-header">
+    <header class="header">
 
-        <header class="main-header">
-
+        <!-- top header -->
+        <div class="main-header">
             <div class="logo">
                 <img src="images/icons/Logo.svg" alt="herb logo" />
             </div>
@@ -65,77 +65,71 @@
                     <line x1="3" y1="18" x2="21" y2="18" />
                 </svg>
             </button>
+        </div>
 
-        </header>
-
-
+        <!-- nav links -->
         <nav>
             <ul class="nav-items">
 
                 <li class="dropdown">
-
-                    <a class="dropbtn">BLOGS
+                    <span class="dropbtn">BLOGS
                         <svg class="chev" width="12" height="8" viewBox="0 0 12 8">
                             <path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
-                    </a>
+                    </span>
 
                     <ul class="dropdown-content">
-                        <li>Learn</li>
-                        <li>Guides</li>
-                        <li>How-Tos</li>
-                        <li>News</li>
-                        <li>Reviews</li>
+                        <li><a href="https://www.google.com">Learn</a></li>
+                        <li><a href="https://www.google.com">Guides</a></li>
+                        <li><a href="https://www.google.com">How-Tos</a></li>
+                        <li><a href="https://www.google.com">News</a></li>
+                        <li><a href="https://www.google.com">Reviews</a></li>
                     </ul>
-
                 </li>
 
-                <li>DISPENSARIES</li>
-                <li>PRODUCTS</li>
-                <li>BRANDS</li>
-                <li>DEALS</li>
+                <li><a href="https://www.google.com">DISPENSARIES</a></li>
+                <li><a href="https://www.google.com">PRODUCTS</a></li>
+                <li><a href="https://www.google.com">BRANDS</a></li>
+                <li><a href="https://www.google.com">DEALS</a></li>
             </ul>
         </nav>
 
-    </div>
+        <!-- Mobile Drawer -->
+        <div class="mobile-drawer">
+            <button class="close-drawer">X</button>
+            <ul class="drawer-nav">
+                <li class="dropdown">
+                    <span id="blogs-mobile-toggle">
+                        <span class="dropdown-label">BLOGS</span>
+                        <img class="arrow" src="images/icons/collapse-arrow.svg" alt="toggle arrow" />
+                    </span>
+                    <ul id="blogs-mobile-dropdown">
+                        <li><a href="https://www.google.com">Learn</a></li>
+                        <li><a href="https://www.google.com">Guides</a></li>
+                        <li><a href="https://www.google.com">How-Tos</a></li>
+                        <li><a href="https://www.google.com">News</a></li>
+                        <li><a href="https://www.google.com">Reviews</a></li>
+                    </ul>
+                </li>
 
-    <!-- Mobile Drawer -->
-    <div class="mobile-drawer">
-
-        <button class="close-drawer">X</button>
-
-        <ul class="drawer-nav">
-            <li class="dropdown">
-                <a id="blogs-mobile-toggle">
-                    <span class="dropdown-label">BLOGS</span>
-                    <img class="arrow" src="images/icons/collapse-arrow.svg" alt="toggle arrow" />
-                </a>
-
-                <ul id="blogs-mobile-dropdown">
-                    <li>Learn</li>
-                    <li>Guides</li>
-                    <li>How-Tos</li>
-                    <li>News</li>
-                    <li>Reviews</li>
-                </ul>
-            </li>
-
-            <li>DISPENSARIES</li>
-            <li>PRODUCTS</li>
-            <li>BRANDS</li>
-            <li>DEALS</li>
-        </ul>
-        <div class="drawer-actions">
-            <p class="advertise">ADVERTISE WITH HERB</p>
-            <button class="subscribe-btn">Subscribe</button>
+                <li><a href="https://www.google.com">DISPENSARIES</a></li>
+                <li><a href="https://www.google.com">PRODUCTS</a></li>
+                <li><a href="https://www.google.com">BRANDS</a></li>
+                <li><a href="https://www.google.com">DEALS</a></li>
+            </ul>
+            <div class="drawer-actions">
+                <p class="advertise">ADVERTISE WITH HERB</p>
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
         </div>
-    </div>
 
+    </header>
 
-    <!-- Subsrcibe Section -->
-    <div class="subscribe-container">
-        <div class="subscribe-box">
+    <div class="body-container">
+
+        <!-- Subsrcibe Section -->
+        <section class="subscribe-box">
             <!-- Left Text -->
             <div class="subscribe-text">
                 <h3>HERB INSIDER</h3>
@@ -149,23 +143,22 @@
                 <input id="inputEmail" type="email" placeholder="Your email address" required>
                 <button id="searchButton" type="submit">Subscribe</button>
             </form>
-        </div>
-    </div>
+        </section>
 
-    <!-- Article Section -->
-    <div class="article-container">
-        <div class="article-section">
 
-            <section class="article-left">
+        <!-- Article Section -->
+        <section class="article-section">
+
+            <div class="article-left">
                 <img src="images/article-left.png" alt="article image" />
-                <p class="date">May 5th, 2025</p>
+                <p class="article-date">May 5th, 2025</p>
                 <h3>
                     Cannabis Marketing <br>
                     Agencies Vs. General Digital <br>
                     Or Advertising Agencies
                 </h3>
 
-            </section>
+            </div>
 
             <aside class="article-right">
                 <h3>Featured articles</h3>
@@ -174,7 +167,7 @@
 
                     <div>
 
-                        <p class="date">June 20th, 2025</p>
+                        <p class="article-date">June 20th, 2025</p>
                         <p class="para">The Evolution of <br>
                             Stoner Games: From <br>
                             High School Classics to <br>
@@ -188,7 +181,7 @@
                     <img src="images/article2.png" alt="article image" />
 
                     <div>
-                        <p class="date">June 18th, 2025</p>
+                        <p class="article-date">June 18th, 2025</p>
                         <p class="para">
                             How to Use a One-Hitter <br>
                             Like a Pro: Packing Tips, <br>
@@ -202,7 +195,7 @@
                 <div class="article-right-container">
                     <img src="images/article3.png" alt="article image" />
                     <div>
-                        <p class="date">June 13th, 2025</p>
+                        <p class="article-date">June 13th, 2025</p>
                         <p class="para">
                             Why Does Weed Make <br>
                             Food Taste Better? The <br>
@@ -212,358 +205,357 @@
                 </div>
 
             </aside>
-        </div>
-    </div>
+            
+        </section>
 
-    <!-- Latest Article Section -->
-    <hr>
-    <div class="latest-article-container">
-        <h4>Latest Articles</h4>
-        <div class="latest-article-section">
 
-            <section class="latest-article-left">
-                <img src="images/article4.png" alt="article image" />
-                <div>
-                    <p class="date">June 17th, 2025</p>
-                    <p class="para">
-                        How Different <br>
-                        Consumption Methods <br>
-                        Affect Your High
-                    </p>
+        <!-- Latest Article Section -->
+        <hr>
+        <section class="latest-article-container">
+            <h4>Latest Articles</h4>
+            <div class="latest-article-section">
+
+                <div class="latest-article-left">
+                    <img src="images/article4.png" alt="article image" />
+                    <div>
+                        <p class="article-date">June 17th, 2025</p>
+                        <p class="para">
+                            How Different <br>
+                            Consumption Methods <br>
+                            Affect Your High
+                        </p>
+                    </div>
                 </div>
-            </section>
 
-            <section class="latest-article-right">
-                <img src="images/article5.png" alt="article image" />
-                <div>
-                    <p class="date">June 13th, 2025</p>
-                    <p class="para">
-                        The Ultimate Chill Kit: <br>
-                        Everything You Need for <br>
-                        the Perfect Smoke Sesh
-                    </p>
+                <div class="latest-article-right">
+                    <img src="images/article5.png" alt="article image" />
+                    <div>
+                        <p class="article-date">June 13th, 2025</p>
+                        <p class="para">
+                            The Ultimate Chill Kit: <br>
+                            Everything You Need for <br>
+                            the Perfect Smoke Sesh
+                        </p>
+                    </div>
                 </div>
-            </section>
 
-        </div>
-    </div>
+            </div>
+        </section>
 
 
-    <!-- Learn Swiper -->
-    <hr />
-    <div class="swiper-container">
+        <!-- Learn Swiper -->
+        <hr />
+        <section class="swiper-container">
 
-        <section class="swiper-header">
-            <h4>Learn</h4>
+            <div class="swiper-header">
+                <h4>Learn</h4>
 
-            <div class="swiper-arrows">
-                <img src="images/icons/left-arrow.png" alt="left arrow" class="swiper-learn-prev arrow" />
-                <img src="images/icons/right-arrow.png" alt="right arrow" class="swiper-learn-next arrow" />
+                <div class="swiper-arrows">
+                    <img src="images/icons/left-arrow.png" alt="left arrow" class="swiper-learn-prev arrow" />
+                    <img src="images/icons/right-arrow.png" alt="right arrow" class="swiper-learn-next arrow" />
+                </div>
+
+            </div>
+
+
+            <div class="swiper mySwiper1">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img src="images/learn-section/1.png" alt="learn image" />
+                        <p class="swiper-date">June 19th, 2025</p>
+                        <p class="para">
+                            Does THC Sparkling
+                            Water Work? Here’s
+                            What It Feels Like
+
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/learn-section/2.png" alt="learn image" />
+                        <p class="swiper-date">June 17th, 2025</p>
+                        <p class="para">
+                            Dry Herb Vaporizer vs.
+                            Oil Carts: Which Is
+                            Healthier in 2025?</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/learn-section/3.png" alt="learn image" />
+                        <p class="swiper-date">June 16th, 2025</p>
+                        <p class="para">
+                            High Standards: 7 Cannabis Products the Herb Team
+                            Can't Live Without
+
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/learn-section/4.png" alt="learn image" />
+                        <p class="swiper-date">June 16th, 2025</p>
+                        <p class="para">
+                            5 LGBTQ+ Owned
+                            Cannabis Brands To Support During Pride Month
+
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/learn-section/1.png" alt="learn image" />
+                        <p class="swiper-date">June 19th, 2025</p>
+                        <p class="para">Does THC Sparkling
+                            Water Work? Here's
+                            What It Feels Like</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/learn-section/2.png" alt="learn image" />
+                        <p class="swiper-date">June 17th, 2025</p>
+                        <p class="para">
+                            Dry Herb Vaporizer vs.
+                            Oil Carts: Which Is
+                            Healthier in 2025?</p>
+                    </div>
+
+                </div>
             </div>
 
         </section>
 
+        <!-- News Swiper -->
+        <hr>
+        <section class="swiper-container">
 
-        <div class="swiper mySwiper1">
+            <div class="swiper-header">
+                <h4 style="text-transform: uppercase;">NEWS</h4>
 
-            <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                    <img src="images/learn-section/1.png" alt="learn image" />
-                    <p class="swiper-date">June 19th, 2025</p>
-                    <p class="para">
-                        Does THC Sparkling
-                        Water Work? Here’s
-                        What It Feels Like
-
-                    </p>
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="images/learn-section/2.png" alt="learn image" />
-                    <p class="swiper-date">June 17th, 2025</p>
-                    <p class="para">
-                        Dry Herb Vaporizer vs.
-                        Oil Carts: Which Is
-                        Healthier in 2025?</p>
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="images/learn-section/3.png" alt="learn image" />
-                    <p class="swiper-date">June 16th, 2025</p>
-                    <p class="para">
-                        High Standards: 7 Cannabis Products the Herb Team
-                        Can't Live Without
-
-                    </p>
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="images/learn-section/4.png" alt="learn image" />
-                    <p class="swiper-date">June 16th, 2025</p>
-                    <p class="para">
-                        5 LGBTQ+ Owned
-                        Cannabis Brands To Support During Pride Month
-
-                    </p>
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="images/learn-section/1.png" alt="learn image" />
-                    <p class="swiper-date">June 19th, 2025</p>
-                    <p class="para">Does THC Sparkling
-                        Water Work? Here's
-                        What It Feels Like</p>
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="images/learn-section/2.png" alt="learn image" />
-                    <p class="swiper-date">June 17th, 2025</p>
-                    <p class="para">
-                        Dry Herb Vaporizer vs.
-                        Oil Carts: Which Is
-                        Healthier in 2025?</p>
+                <div class="swiper-arrows">
+                    <img src="images/icons/left-arrow.png" alt="left arrow" class="swiper-news-prev arrow" />
+                    <img src="images/icons/right-arrow.png" alt="right arrow" class="swiper-news-next arrow" />
                 </div>
 
             </div>
-            <!-- <div class="swiper-pagination"></div> -->
-        </div>
 
-    </div>
 
-    <!-- News Swiper -->
-    <hr>
-    <div class="swiper-container">
+            <div class="swiper mySwiper2">
 
-        <section class="swiper-header">
-            <h4 style="text-transform: uppercase;">NEWS</h4>
+                <div class="swiper-wrapper">
 
-            <div class="swiper-arrows">
-                <img src="images/icons/left-arrow.png" alt="left arrow" class="swiper-news-prev arrow" />
-                <img src="images/icons/right-arrow.png" alt="right arrow" class="swiper-news-next arrow" />
+                    <div class="swiper-slide">
+                        <img src="images/news-section/1.png" alt="learn image" />
+                        <p class="swiper-date">June 19th, 2025</p>
+                        <p class="para">
+                            Will Trump Legalize Weed Federally? Analyzing the Possibilities Ahead
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/news-section/2.png" alt="learn image" />
+                        <p class="swiper-date">June 17th, 2025</p>
+                        <p class="para">
+                            Marc Emery: A Cannabis Activist's Journey Through Trials and Triumphs
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/news-section/3.png" alt="learn image" />
+                        <p class="swiper-date">June 16th, 2025</p>
+                        <p class="para">
+                            Herb's Digital 4/20 Scavenger Hunt Makes Cannabis History With Massive Prize Pool
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/news-section/4.png" alt="learn image" />
+                        <p class="swiper-date">June 16th, 2025</p>
+                        <p class="para">
+                            EdiblesExpress: Chicago's
+                            Go-To Online Edible Store
+                            Has Officially Launched
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/news-section/1.png" alt="learn image" />
+                        <p class="swiper-date">June 19th, 2025</p>
+                        <p class="para">
+                            Will Trump Legalize Weed Federally? Analyzing the Possibilities Ahead
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/news-section/2.png" alt="learn image" />
+                        <p class="swiper-date">June 17th, 2025</p>
+                        <p class="para">
+                            Marc Emery: A Cannabis Activist's Journey Through Trials and Triumphs
+                        </p>
+                    </div>
+
+                </div>
             </div>
 
         </section>
 
+        <!-- Culture Swiper -->
+        <hr>
+        <section class="swiper-container">
 
-        <div class="swiper mySwiper2">
+            <div class="swiper-header">
+                <h4 style="text-transform: uppercase;">Culture</h4>
 
-            <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                    <img src="images/news-section/1.png" alt="learn image" />
-                    <p class="swiper-date">June 19th, 2025</p>
-                    <p class="para">
-                        Will Trump Legalize Weed Federally? Analyzing the Possibilities Ahead
-                    </p>
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="images/news-section/2.png" alt="learn image" />
-                    <p class="swiper-date">June 17th, 2025</p>
-                    <p class="para">
-                        Marc Emery: A Cannabis Activist's Journey Through Trials and Triumphs
-                    </p>
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="images/news-section/3.png" alt="learn image" />
-                    <p class="swiper-date">June 16th, 2025</p>
-                    <p class="para">
-                        Herb's Digital 4/20 Scavenger Hunt Makes Cannabis History With Massive Prize Pool
-                    </p>
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="images/news-section/4.png" alt="learn image" />
-                    <p class="swiper-date">June 16th, 2025</p>
-                    <p class="para">
-                        EdiblesExpress: Chicago's
-                        Go-To Online Edible Store
-                        Has Officially Launched
-                    </p>
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="images/news-section/1.png" alt="learn image" />
-                    <p class="swiper-date">June 19th, 2025</p>
-                    <p class="para">
-                        Will Trump Legalize Weed Federally? Analyzing the Possibilities Ahead
-                    </p>
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="images/news-section/2.png" alt="learn image" />
-                    <p class="swiper-date">June 17th, 2025</p>
-                    <p class="para">
-                        Marc Emery: A Cannabis Activist's Journey Through Trials and Triumphs
-                    </p>
+                <div class="swiper-arrows">
+                    <img src="images/icons/left-arrow.png" alt="left arrow" class="swiper-culture-prev arrow" />
+                    <img src="images/icons/right-arrow.png" alt="right arrow" class="swiper-culture-next arrow" />
                 </div>
 
             </div>
-            <!-- <div class="swiper-pagination"></div> -->
-        </div>
-
-    </div>
-
-    <!-- Culture Swiper -->
-    <hr>
-    <div class="swiper-container">
-
-        <section class="swiper-header">
-            <h4 style="text-transform: uppercase;">Culture</h4>
-
-            <div class="swiper-arrows">
-                <img src="images/icons/left-arrow.png" alt="left arrow" class="swiper-culture-prev arrow" />
-                <img src="images/icons/right-arrow.png" alt="right arrow" class="swiper-culture-next arrow" />
-            </div>
-
-        </section>
 
 
-        <div class="swiper mySwiper3">
+            <div class="swiper mySwiper3">
 
-            <div class="swiper-wrapper">
+                <div class="swiper-wrapper">
 
-                <div class="swiper-slide">
-                    <img src="images/culture-section/1.png" alt="learn image" />
-                    <p class="swiper-date">June 19th, 2025</p>
-                    <p class="para">Say Hello To 2025
-                        With These 5 Strains</p>
+                    <div class="swiper-slide">
+                        <img src="images/culture-section/1.png" alt="learn image" />
+                        <p class="swiper-date">June 19th, 2025</p>
+                        <p class="para">Say Hello To 2025
+                            With These 5 Strains</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/culture-section/2.png" alt="learn image" />
+                        <p class="swiper-date">June 17th, 2025</p>
+                        <p class="para">
+                            What It's Like To
+                            Smoke Weed In China
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/culture-section/3.png" alt="learn image" />
+                        <p class="swiper-date">June 16th, 2025</p>
+                        <p class="para">
+                            10 Biggest Celebrity
+                            Stoners You Should Know
+
+
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/culture-section/4.png" alt="learn image" />
+                        <p class="swiper-date">June 16th, 2025</p>
+                        <p class="para">
+                            This Is Why Making Out
+                            While High Is So Hot
+
+
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/culture-section/1.png" alt="learn image" />
+                        <p class="swiper-date">June 19th, 2025</p>
+                        <p class="para">
+                            Say Hello To 2025
+                            With These 5 Strains
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/culture-section/2.png" alt="learn image" />
+                        <p class="swiper-date">June 17th, 2025</p>
+                        <p class="para">
+                            What It's Like To
+                            Smoke Weed In China
+
+                        </p>
+                    </div>
+
                 </div>
-
-                <div class="swiper-slide">
-                    <img src="images/culture-section/2.png" alt="learn image" />
-                    <p class="swiper-date">June 17th, 2025</p>
-                    <p class="para">
-                        What It's Like To
-                        Smoke Weed In China
-                    </p>
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="images/culture-section/3.png" alt="learn image" />
-                    <p class="swiper-date">June 16th, 2025</p>
-                    <p class="para">
-                        10 Biggest Celebrity
-                        Stoners You Should Know
-
-
-                    </p>
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="images/culture-section/4.png" alt="learn image" />
-                    <p class="swiper-date">June 16th, 2025</p>
-                    <p class="para">
-                        This Is Why Making Out
-                        While High Is So Hot
-
-
-                    </p>
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="images/culture-section/1.png" alt="learn image" />
-                    <p class="swiper-date">June 19th, 2025</p>
-                    <p class="para">
-                        Say Hello To 2025
-                        With These 5 Strains
-                    </p>
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="images/culture-section/2.png" alt="learn image" />
-                    <p class="swiper-date">June 17th, 2025</p>
-                    <p class="para">
-                        What It's Like To
-                        Smoke Weed In China
-
-                    </p>
-                </div>
-
-            </div>
-            <!-- <div class="swiper-pagination"></div> -->
-        </div>
-
-    </div>
-
-    <!-- Review Swiper -->
-    <hr>
-    <div class="swiper-container">
-
-        <section class="swiper-header">
-            <h4 style="text-transform: uppercase;">Reviews</h4>
-
-            <div class="swiper-arrows">
-                <img src="images/icons/left-arrow.png" alt="left arrow" class="swiper-reviews-prev arrow" />
-                <img src="images/icons/right-arrow.png" alt="right arrow" class="swiper-reviews-next arrow" />
             </div>
 
         </section>
 
+        <!-- Review Swiper -->
+        <hr>
+        <section class="swiper-container">
 
-        <div class="swiper mySwiper4">
+            <div class="swiper-header">
+                <h4 style="text-transform: uppercase;">Reviews</h4>
 
-            <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                    <img src="images/reviews-section/1.png" alt="learn image" />
-                    <p class="swiper-date">June 19th, 2025</p>
-                    <p class="para">Does THC Sparkling
-                        Water Work? Here's
-                        What It Feels Like</p>
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="images/reviews-section/2.png" alt="learn image" />
-                    <p class="swiper-date">June 17th, 2025</p>
-                    <p class="para">
-                        Dry Herb Vaporizer vs.
-                        Oil Carts: Which Is
-                        Healthier in 2025?</p>
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="images/reviews-section/3.png" alt="learn image" />
-                    <p class="swiper-date">June 16th, 2025</p>
-                    <p class="para">
-                        High Standards: 7 Cannabis Products the Herb Team
-                        Can't Live Without
-
-                    </p>
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="images/reviews-section/4.png" alt="learn image" />
-                    <p class="swiper-date">June 16th, 2025</p>
-                    <p class="para">
-                        5 LGBTQ+ Owned
-                        Cannabis Brands To Support During Pride Month
-
-                    </p>
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="images/reviews-section/1.png" alt="learn image" />
-                    <p class="swiper-date">June 19th, 2025</p>
-                    <p class="para">Does THC Sparkling
-                        Water Work? Here's
-                        What It Feels Like</p>
-                </div>
-
-                <div class="swiper-slide">
-                    <img src="images/reviews-section/2.png" alt="learn image" />
-                    <p class="swiper-date">June 17th, 2025</p>
-                    <p class="para">
-                        Dry Herb Vaporizer vs.
-                        Oil Carts: Which Is
-                        Healthier in 2025?</p>
+                <div class="swiper-arrows">
+                    <img src="images/icons/left-arrow.png" alt="left arrow" class="swiper-reviews-prev arrow" />
+                    <img src="images/icons/right-arrow.png" alt="right arrow" class="swiper-reviews-next arrow" />
                 </div>
 
             </div>
-            <!-- <div class="swiper-pagination"></div> -->
-        </div>
+
+
+            <div class="swiper mySwiper4">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img src="images/reviews-section/1.png" alt="learn image" />
+                        <p class="swiper-date">June 19th, 2025</p>
+                        <p class="para">Does THC Sparkling
+                            Water Work? Here's
+                            What It Feels Like</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/reviews-section/2.png" alt="learn image" />
+                        <p class="swiper-date">June 17th, 2025</p>
+                        <p class="para">
+                            Dry Herb Vaporizer vs.
+                            Oil Carts: Which Is
+                            Healthier in 2025?</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/reviews-section/3.png" alt="learn image" />
+                        <p class="swiper-date">June 16th, 2025</p>
+                        <p class="para">
+                            High Standards: 7 Cannabis Products the Herb Team
+                            Can't Live Without
+
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/reviews-section/4.png" alt="learn image" />
+                        <p class="swiper-date">June 16th, 2025</p>
+                        <p class="para">
+                            5 LGBTQ+ Owned
+                            Cannabis Brands To Support During Pride Month
+
+                        </p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/reviews-section/1.png" alt="learn image" />
+                        <p class="swiper-date">June 19th, 2025</p>
+                        <p class="para">Does THC Sparkling
+                            Water Work? Here's
+                            What It Feels Like</p>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="images/reviews-section/2.png" alt="learn image" />
+                        <p class="swiper-date">June 17th, 2025</p>
+                        <p class="para">
+                            Dry Herb Vaporizer vs.
+                            Oil Carts: Which Is
+                            Healthier in 2025?</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
 
     </div>
 

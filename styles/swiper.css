@@ -28,9 +28,10 @@
 }
 
 .swiper-date {
-  margin-top: 8px;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
   color: var(--color-border);
-  font-size: 12px;
 }
 
 .swiper-header {

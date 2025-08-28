@@ -31,8 +31,6 @@ const swiper1 = new Swiper(".mySwiper1", {
     }
 });
 
-
-
 const swiper2 = new Swiper(".mySwiper2", {
     slidesPerView: 4,
     spaceBetween: 20,
@@ -59,7 +57,6 @@ const swiper2 = new Swiper(".mySwiper2", {
         }
     }
 });
-
 
 const swiper3 = new Swiper(".mySwiper3", {
     slidesPerView: 4,
@@ -88,7 +85,6 @@ const swiper3 = new Swiper(".mySwiper3", {
     }
 
 });
-
 
 const swiper4 = new Swiper(".mySwiper4", {
     slidesPerView: 4,
@@ -133,9 +129,18 @@ closeDrawer.addEventListener("click", () => {
     mobileDrawer.classList.remove("open");
 });
 
+// dropdown functionality
+const blogsMobileToggle = document.getElementById("blogs-mobile-toggle");
+const blogsMobileDropdown = document.getElementById("blogs-mobile-dropdown");
+
+blogsMobileToggle.addEventListener("click", () => {
+  blogsMobileDropdown.classList.toggle("open");
+  blogsMobileToggle.classList.toggle("open");
+});
+
+
 
 // searchQuery input
-
 const searchQuery = document.getElementById('searchQuery');
 const searchQueryBtn = document.getElementById('searchQueryBtn')
 
@@ -152,13 +157,3 @@ searchButton.addEventListener("click", (e) => {
     e.preventDefault();
     alert("User email: " + inputEmail.value);
 })
-
-
-// dropdown functionality
-const blogsMobileToggle = document.getElementById("blogs-mobile-toggle");
-const blogsMobileDropdown = document.getElementById("blogs-mobile-dropdown");
-
-blogsMobileToggle.addEventListener("click", () => {
-  blogsMobileDropdown.classList.toggle("open");
-  blogsMobileToggle.classList.toggle("open");
-});
